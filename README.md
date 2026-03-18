@@ -31,9 +31,10 @@ Step-by-step instructions are available at [docs.stashapp.cc/installation](https
 As of version 0.27.0, Stash no longer supports _Windows 7, 8, Server 2008 and Server 2012._  
 At least Windows 10 or Server 2016 is required.
 
+* You can tag videos and find them later.
 * Stash provides statistics about performers, tags, studios and more.
 
-### **Audio File Support**
+### Audio Files/Stories Support
 
 Stash now supports audio files/stories with the following metadata:
 - Name
@@ -52,7 +53,6 @@ Stash now supports audio files/stories with the following metadata:
 You can [watch a SFW demo video](https://vimeo.com/545323354) to see it in action.
 
 For further information you can consult the [documentation](https://docs.stashapp.cc) or access the in-app manual from within the application (also available at [docs.stashapp.cc/in-app-manual](https://docs.stashapp.cc/in-app-manual)).
-<img src="docs/readme_assets/windows_logo.svg" width="100%" height="75"> Windows | <img src="docs/readme_assets/mac_logo.svg" width="100%" height="75"> macOS | <img src="docs/readme_assets/linux_logo.svg" width="100%" height="75"> Linux | <img src="docs/readme_assets/docker_logo.svg" width="100%" height="75"> Docker
 :---:|:---:|:---:|:---:
 [Latest Release](https://github.com/stashapp/stash/releases/latest/download/stash-win.exe) <br /> <sup><sub>[Development Preview](https://github.com/stashapp/stash/releases/download/latest_develop/stash-win.exe)</sub></sup> | [Latest Release](https://github.com/stashapp/stash/releases/latest/download/Stash.app.zip) <br /> <sup><sub>[Development Preview](https://github.com/stashapp/stash/releases/download/latest_develop/Stash.app.zip)</sub></sup> | [Latest Release (amd64)](https://github.com/stashapp/stash/releases/latest/download/stash-linux) <br /> <sup><sub>[Development Preview (amd64)](https://github.com/stashapp/stash/releases/download/latest_develop/stash-linux)</sub></sup> <br /> [More Architectures...](https://github.com/stashapp/stash/releases/latest) | [Instructions](docker/production/README.md) <br /> <sup><sub>[Sample docker-compose.yml](docker/production/docker-compose.yml)</sub></sup>
 
