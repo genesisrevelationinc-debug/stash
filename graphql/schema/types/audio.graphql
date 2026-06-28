@@ -1,0 +1,93 @@
+type Audio {
+  id: ID!
+  checksum: String!
+  path: String!
+  title: String
+  author: String
+  url: String
+  date: String
+  language: String
+  rating100: Int
+  o_counter: Int
+  organized: Boolean!
+  duration: Float
+  cover_front: String
+  cover_back: String
+  details: String
+  created_at: Timestamp!
+  updated_at: Timestamp!
+  file_mod_time: Timestamp
+  studios: [Studio!]!
+  performers: [Performer!]!
+  tags: [Tag!]!
+  markers: [AudioMarker!]!
+  files: [AudioFile!]!
+  # Image is returned as base64 encoded image
+  cover_front_image: String
+  cover_back_image: String
+}
+
+type AudioFile {
+  id: ID!
+  path: String!
+  size: Int!
+  mod_time: Timestamp!
+  format: String!
+  duration: Float
+  bitrate: Int
+  sample_rate: Int
+  channels: Int
+}
+
+type AudioMarker {
+  id: ID!
+  title: String!
+  seconds: Float!
+  primary_tag: Tag!
+  tags: [Tag!]!
+  created_at: Timestamp!
+  updated_at: Timestamp!
+}
+
+input AudioCreateInput {
+  id: ID
+  title: String
+  author: String
+  url: String unre
+  date: String
+  language: String
+  rating100: Int
+  organized: Boolean
+  details: String
+  studio_ids: [ID!]
+  performer_ids: [ID!]
+  tag_ids: [ID!]
+  cover_front: String
+  cover_back: String
+}
+
+input AudioUpdateInput {
+  id: ID!
+  title: String
+  author: String
+  url: String
+  date: String
+  language: String
+  rating100: Int
+  organized: Boolean
+  details: String
+  studio_ids: [ID!]
+  performer_ids: [ID!]
+  tag_ids: [ID!]
+  cover_front: String
+  cover_back: String
+}
+
+input BulkAudioUpdateInput {
+  ids: [ID!]
+  rating100: Int
+  organized: Boolean
+  studio_ids: [ID!]
+  performer_ids: [ID!]
+  tag_ids: [ID!]
+}
